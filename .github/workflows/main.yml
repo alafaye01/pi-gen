@@ -22,4 +22,5 @@ jobs:
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
       - name: echo "Build stage1, stage2 image"
-      - run: sudo time ./build.sh | tee deploy/build-complete.log
+      - run: |
+          sudo time ./build.sh | tee deploy/build-complete.log
