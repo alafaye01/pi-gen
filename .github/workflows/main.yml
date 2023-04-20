@@ -22,3 +22,8 @@ jobs:
       - name: Run build script
         run: ./.github/scripts/build.sh
         shell: bash
+
+      - uses: actions/upload-artifact@v3
+        with:
+          name: RPi image
+          path: deploy/*zip
