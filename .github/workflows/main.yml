@@ -14,11 +14,11 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
-      
+
       - name: Check directory content
         run: |
           ls
 
-      - name: Docker Kosmos Pi Gen build
-        run: ./runner-build.sh
+      - name: Run build script
+        run: ./.github/scripts/build.sh
         shell: bash
