@@ -14,6 +14,10 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v3
       - run: echo "The ${{ github.repository }} repository has been cloned to the runner."
+      
+      - name: Check directory content
+        run: |
+          ls
 
       - name: Docker Kosmos Pi Gen build
         run: |
