@@ -18,6 +18,7 @@ jobs:
       - name: Check directory content
         run: |
           ls
+      - name: Try to check file
         run: |
           cat runner-build.sh
 
