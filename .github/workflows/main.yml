@@ -21,4 +21,4 @@ jobs:
 
       - name: Docker Kosmos Pi Gen build
         run: |
-          bash runner-build.sh
+          "bash runner-build.sh"
