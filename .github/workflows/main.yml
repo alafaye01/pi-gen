@@ -18,6 +18,8 @@ jobs:
       - name: Check directory content
         run: |
           ls
+        run: |
+          cat runner-build.sh
 
       - name: Docker Kosmos Pi Gen build
         run: |
